@@ -22,8 +22,6 @@ def daum_toon(day):
     data = request_json_data_from_url(url)
     return { 'data': parse_daum_webtoon_data(data) }
 
-
-
 def request_json_data_from_url(url):
     # 3. 해당 url에 요청을 보낸다.
     response = requests.get(url)
